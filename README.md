@@ -1,9 +1,12 @@
 # Cab Mobility Challenge
-For this data science challenge you are provided with a dataset containing mobility traces of ~500 taxi cabs in San Francisco collected over ~30 days. The format of each mobility trace file is the following - each line contains [latitude, longitude, occupancy, time], e.g.: [37.75134 -122.39488 0 1213084687], where latitude and longitude are in decimal degrees, occupancy shows if a cab has a fare (1 = occupied, 0 = free) and time is in UNIX epoch format.
-The goal of this data science challenge is twofold:
-1. To calculate the potential for yearly reduction on CO2 emissions, caused by the taxi cabs roaming without passengers. In your calculation please assume that the taxi cab fleet is changing at the rate of 15% per month (from combustion engine-powered vehicles to electric vehicles). Assume also that the average passenger vehicle emits about 404 grams of CO2 per mile.
-2. To build a predictor for taxi drivers, predicting the next place a passenger will hail a cab.
-
-Bonus question:
-
-3. Identify clusters of taxi cabs that you find being relevant from the taxi cab company point of view.
+## Background
+1. Given dataset containing mobility traces of ~500 taxi cabs in San Francisco collected over ~30 days.
+2. Taxi Cab company wants to measure the environmental impact of changing the cab fleet from internal combustion engine-powered vehicles (ICEV) to electric vehicles (EV).
+3. Taxi companies want to have the best approach to predict place where the next passenger will be
+## Goal
+Unlock the full potential of Taxi Company mobility traces data by estimate the yearly CO2 reduction of fleet changing and creating a model which can predict place where the next passenger will be.
+## Model used
+1. Linear Regression
+2. Light GBM
+## Metrics used
+Mean Absolute Error (MAE)
